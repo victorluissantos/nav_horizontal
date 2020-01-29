@@ -1,0 +1,87 @@
+<html lang="en">
+	<header>
+		<meta charset="UTF-8">
+		<title>Example Nav Horizontal</title>
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<!-- MY content set's css styles -->
+		<link rel="stylesheet" type="text/css" href="css/game-style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</header>
+	<section>
+		<div class="row">
+			<div class="col-md-12">
+				<img class="logo" src="img/letreiro.png" alt="logo" title="Logo"/>
+			</div>
+		</div>
+	</section>
+	<section class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<ul class="nav-menu">
+					<li onclick="change_nav($(this))" class="about active">About</li>
+					<li onclick="change_nav($(this))" class="game">Game</li>
+					<li onclick="change_nav($(this))" class="contact">Contact</li>
+				</ul>
+			</div>
+			<div class="col-md-9 pages">
+				<div class="row">
+					<div class="col-md-12" data-name="About">
+						<span>
+							<h3>About</h3>
+							<p>
+							This project is a home page with simple code of game. 
+							</p>
+						</span>
+					</div>
+					<div class="col-md-12 hide" data-name="Game">
+						<h3>Game</h3>
+						<div id="picbox">
+							<span id="boxbuttons">
+								<span class="button">
+									<span id="counter">0</span>
+								</span>
+								<span class="button">
+									<a onclick="ResetGame();">Reset</a>
+								</span>
+							</span>
+							<div id="boxcard">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 hide" data-name="Contact">
+						<span>
+							<h3>Contact</h3>
+							<p>
+							<form action="" method="GET">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your E-mail" />
+									<br />
+									<input type="text" class="form-control" placeholder="Subjects" />
+									<br />
+									<textarea class="form-control" placeholder="Your Message"></textarea>
+									<br />
+									<input type="submit" class="btn btn-warning btn-block" value="Send it">
+								</div>
+							</form>
+							</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- -->
+		<script type="text/javascript" src="js/game-script.js"></script>
+		<!-- -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</footer>
+</html>

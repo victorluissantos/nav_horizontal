@@ -1,0 +1,41 @@
+body {
+	background-image: url('../img/wallpaper.jpeg');
+	background-size: 100%;
+	background-position: center;
+	color: black;
+}
+
+.logo {
+	width: 25%;
+	margin-left: 40%;
+}
+
+.container {
+	/*margin-top: 6%;*/
+}
+
+.container .pages {
+	background-color: white;
+	min-height: 560px;
+	border: 2px solid #A9A9A9;
+	background-color: #D3D3D3;
+	padding: 12px;
+	margin-left: -2%;
+}
+
+.nav-menu {
+	cursor: pointer;
+}
+
+.nav-menu li {
+	list-style-type: none;
+	padding: 12px;
+	background-color: #D3D3D3;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.nav-menu li:hover, .nav-menu li.active {
+	background-color: #C0C0C0;
+	border: 2px solid #A9A9A9;
+	font-weight: bold;
+}
